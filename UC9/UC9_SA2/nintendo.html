@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Seleção de linguagem-->
+<head> <!--Conteúdo não visível para o usuário-->
+    <meta charset="UTF-8"> <!--Configuração para caracteres latinos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Configuração de compatibilidade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configuração para responsividade-->
+    <title>Home - Game Mania</title> <!--Nome de exibição na guia do navegador-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> <!--Link do html com o css-->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jquery para exibir opções do menu de barras -->
+</head>
+<body>
+    <header> <!--Cabeçalho da página-->
+        <div class="container-grid posicionamento">
+            <div>
+                <a href="index.html"><img class="logo" src="imagens/pacman.svg" alt="Logo do site Game Mania"></a>
+            </div>
+            <div>
+                <a href="index.html"><img class="logo2" src="imagens/logo.svg" alt="Logo do site Game Mania"></a>
+            </div>
+            <div  class="endereço">
+                <div>
+                    <p></p>Rua Um, nº 2 - Centro/SP - (11)4561-2378</p>
+                    <div class="pesquisa">
+                        <input class="search-text" type="text" name="" placeholder="O que você quer jogar hoje?">
+                </div></div>
+            </div>
+            <div class="menu">
+                <a href="#"><img class="redes" src="imagens/whats1.svg" alt="WhatsApp"></a>
+                <a href="https://www.facebook.com/thiago.leonardo.923/" target="_blank"><img class="redes" src="imagens/face1.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/thiago.leonardo.923/" target="_blank"><img class="redes" src="imagens/insta1.svg" alt="Instagram"></a>
+                <a href="#"><img class="carrinho" src="imagens/carrinho.svg" alt="Itens"></a>
+            </div>
+            <a href="#" onclick="mostrarMenu()"><img class="barras" src="imagens/bars.svg" alt="Menu de Barras"></a>
+                <div id="menu" class="menuVerticalInativo">
+                    <div class="menuVerticalOp">
+                        <a href="#">Pesquisar</a>
+                        <a href="#">Carrinho</a>
+                        <a href="playstation.html">Playstation</a>
+                        <a href="xbox.html">Xbox</a>
+                        <a href="nintendo.html">Nintendo</a>
+                        <a href="#">Retrô</a>
+                        <a href="#">Fale Conosco</a>
+                        <a href="#">Institucional</a>                
+                    </div>
+        </div>
+    </header>
+    <section class="container-grid posicionamento2">
+        <div class="nov">
+            <div class="itens"><a href="#">Nintendo Switch</a></div>
+            <div><a href="#"itens><img class="imgnov" src="imagens/nsw.png" alt="Nintendo Switch"></a></div>
+            <div class="preço"><a href="#">R$ 2.200,00 á vista ou 10x s/ juros!</a></div>
+        </div>
+        <div class="nov">
+            <div class="itens"><a href="#">Nintendo Switch</a></div>
+            <div class="itens2"><a href="#"itens><img class="imgnov" src="imagens/ntdswitch.png" alt="Nintendo Switch"></a></div>
+            <div class="preço"><a href="#">R$ 2.200,00 á vista ou 10x s/ juros!</a></div>
+        </div>
+    </section>     
+    <footer>
+        <div class="container-grid">        
+            <div class="itensFooter">
+                <div class="itensFooter2">
+                    <p class="opfooter">Institucional</p>
+                    <a href="#">Game Mania é confiável?</a>
+                    <a href="#">Quem somos</a>
+                    <a href="#">Política de vendas</a>
+                    <a href="#">Política de privacidade</a>
+                </div>
+                <div class="itensFooter2">
+                    <p class="opfooter">Categorias</p>
+                    <a href="playstation.html">Playstation</a>
+                    <a href="xbox.html">Xbox</a>
+                    <a href="nintendo.html">Nintendo</a>
+                    <a href="#">Retrô</a>
+                    <a href="#">Outros</a>
+                </div>
+                <div class="itensFooter3">
+                    <p class="opfooter">Atendimento</p>
+                    <p>Seg. a Sexta das 9:00 ás 18:00.</p>
+                    <p>End.: Rua Um, nº 2 - Centro/SP</p>
+                </div>
+                <div class="itensFooter3">
+                    <p class="opfooter">Ajuda e Suporte</p>
+                    <p>Tel.: (11)4561-2378</p>
+                    <p>gamemania@gmail.com</p>
+                </div>
+                <div>
+                    <p class="opfooter">Nossas Redes</p>
+                    <a href="#"><img class="redesFooter" src="imagens/whats2.png" alt="WhatsApp"></a>
+                    <a href="https://www.facebook.com/thiago.leonardo.923/" target="_blank"><img class="redesFooter" src="imagens/face2.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/thiago.leonardo.923/" target="_blank"><img class="redesFooter" src="imagens/insta2.png" alt="Instagram"></a>
+                </div>
+            </div>
+    </footer>
+</body>
+<script>
+    let menu = document.getElementById("menu");
+        function mostrarMenu () {
+            if(menu.className == "menuVerticalInativo") {
+                menu.className = "menuVerticalAtivo"
+            } else {
+                menu.className = "menuVerticalInativo"
+            }
+        }
+</script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</html>
